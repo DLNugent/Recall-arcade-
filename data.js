@@ -57,7 +57,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "AI describes systems performing tasks associated with intelligence.",
         "id": "ita-1",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -75,14 +77,17 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Machine learning is a foundation for many AI solutions.",
         "id": "ita-2",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "recall",
-        "prompt": "What word describes an AI system's ability to produce an output for a new input?",
+        "prompt": "What is the term for running an already trained AI model on a new input to obtain an output?",
         "answer": "Inference",
         "aliases": [
-          "Inference"
+          "Inference",
+          "model inference"
         ],
         "options": [
           "Inference",
@@ -90,16 +95,19 @@ window.QUIZ_MODULES = [
           "Labelling",
           "Indexing"
         ],
-        "explanation": "Inference is using a trained model on new input.",
+        "explanation": "Inference means using a trained model to produce an output from new input. This is supplementary machine-learning terminology, beyond the overview unit.",
         "id": "ita-3",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "recall",
         "prompt": "What process adjusts a model from examples before it is used?",
         "answer": "Training",
         "aliases": [
-          "Training"
+          "Training",
+          "model training"
         ],
         "options": [
           "Training",
@@ -109,11 +117,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Training is the process of learning from example data.",
         "id": "ita-4",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "recall",
-        "prompt": "What term describes data that a model has not seen during training?",
+        "prompt": "What phrase describes examples a model did not encounter during its training?",
         "answer": "Unseen data",
         "aliases": [
           "Unseen data",
@@ -125,9 +135,11 @@ window.QUIZ_MODULES = [
           "Labels",
           "Prompts"
         ],
-        "explanation": "Unseen data can be used to check generalisation.",
+        "explanation": "Unseen data is data not used to train the model. This is supplementary machine-learning terminology.",
         "id": "ita-5",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "match",
@@ -137,14 +149,16 @@ window.QUIZ_MODULES = [
           "Conceptual overview"
         ],
         "options": [
-          "Mathematical derivations",
-          "Model deployment lab",
           "Conceptual overview",
-          "Coding tutorial"
+          "Hands-on model training",
+          "Technical architecture deep dive",
+          "Machine learning mathematics"
         ],
         "explanation": "The introductory unit says the module explores capabilities and basic principles without deep maths or code.",
         "id": "ita-6",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -155,30 +169,34 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Identifying objects in a photo",
-          "Copying a file byte for byte",
-          "Displaying a static web page",
-          "Storing a PDF without analysis"
+          "Resizing a photo without analysis",
+          "Saving photos to cloud storage",
+          "Displaying an existing photo gallery"
         ],
         "explanation": "Interpreting visual input is an AI workload.",
         "id": "ita-7",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which task is closest to a predictive AI workload?",
+        "prompt": "Which example is a prediction based on patterns in previously observed data?",
         "answer": "Estimating a future value from past patterns",
         "aliases": [
           "Estimating a future value from past patterns"
         ],
         "options": [
           "Estimating a future value from past patterns",
-          "Sorting a list alphabetically",
-          "Saving a document",
-          "Drawing a fixed logo"
+          "Extracting a total from a scanned invoice",
+          "Transcribing words from a recording",
+          "Identifying objects in an image"
         ],
-        "explanation": "Predictive models use learned patterns to estimate outputs.",
+        "explanation": "Predicting a value using patterns from earlier data is a common predictive machine-learning task.",
         "id": "ita-8",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "match",
@@ -188,31 +206,35 @@ window.QUIZ_MODULES = [
           "No prerequisite is required"
         ],
         "options": [
-          "Advanced calculus is mandatory",
           "No prerequisite is required",
-          "An Azure subscription is mandatory",
-          "Python proficiency is mandatory"
+          "Previous machine-learning knowledge is required",
+          "Previous Python experience is required",
+          "An Azure account is required"
         ],
         "explanation": "A conceptual understanding of machine learning helps, but is not required.",
         "id": "ita-9",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "What is a model in an AI application?",
+        "prompt": "In introductory machine-learning terminology, what is a trained model?",
         "answer": "A trained component that maps inputs to outputs",
         "aliases": [
           "A trained component that maps inputs to outputs"
         ],
         "options": [
-          "A physical computer case",
-          "A user-interface colour scheme",
-          "A web domain name",
-          "A trained component that maps inputs to outputs"
+          "A trained component that maps inputs to outputs",
+          "The collection of prompts sent by users",
+          "An interface for reviewing outputs",
+          "A database that stores training examples"
         ],
-        "explanation": "Models are trained components used to process inputs.",
+        "explanation": "A trained model learns a mapping or pattern from example data to produce outputs for new inputs.",
         "id": "ita-10",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "scenario",
@@ -222,14 +244,16 @@ window.QUIZ_MODULES = [
           "Computer vision"
         ],
         "options": [
-          "Data encryption",
-          "Text translation",
-          "Speech synthesis",
-          "Computer vision"
+          "Computer vision",
+          "Text classification",
+          "Information extraction",
+          "Speech recognition"
         ],
         "explanation": "Computer vision analyses visual content.",
         "id": "ita-11",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -239,14 +263,16 @@ window.QUIZ_MODULES = [
           "Speech recognition"
         ],
         "options": [
-          "Entity redaction",
-          "Image segmentation",
+          "Speech recognition",
           "Speech synthesis",
-          "Speech recognition"
+          "Speech translation",
+          "Audio classification"
         ],
         "explanation": "Speech recognition converts spoken language into text.",
         "id": "ita-12",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -257,13 +283,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Generative AI",
-          "Object detection",
-          "Optical character recognition",
-          "Image classification"
+          "Text classification",
+          "Entity detection",
+          "Sentiment analysis"
         ],
         "explanation": "Generative AI produces new content in response to prompts.",
         "id": "ita-13",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -273,14 +301,16 @@ window.QUIZ_MODULES = [
           "Information extraction"
         ],
         "options": [
-          "Text-to-speech",
           "Information extraction",
-          "Speech synthesis",
-          "Visual search"
+          "Image generation",
+          "Language detection",
+          "Speech synthesis"
         ],
         "explanation": "Document processing extracts useful fields from forms.",
         "id": "ita-14",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -291,20 +321,23 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Inference",
-          "Annotation",
-          "Data collection",
-          "Training"
+          "Training",
+          "Fine-tuning",
+          "Data labelling"
         ],
         "explanation": "Applying a trained model to an input is inference.",
         "id": "ita-15",
-        "topic": "Introduction to AI"
+        "topic": "Introduction to AI",
+        "sourceUnit": "1-introduction",
+        "coverage": "supplementary"
       },
       {
         "type": "recall",
         "prompt": "What is the user's text instruction to a language model called?",
         "answer": "Prompt",
         "aliases": [
-          "Prompt"
+          "Prompt",
+          "user prompt"
         ],
         "options": [
           "Prompt",
@@ -314,7 +347,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "A prompt initiates content generation.",
         "id": "gaaa-1",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -331,7 +366,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "LLM means large language model.",
         "id": "gaaa-2",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -348,15 +385,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "SLM means small language model.",
         "id": "gaaa-3",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
-        "prompt": "What term describes meaningful relationships between words?",
+        "prompt": "What phrase describes the meaningful relationships a language model represents between words and other language elements?",
         "answer": "Semantic relationships",
         "aliases": [
           "Semantic relationships",
-          "semantics"
+          "semantics",
+          "semantic relationship"
         ],
         "options": [
           "Semantic relationships",
@@ -366,7 +406,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Semantic relationships help language models generate coherent text.",
         "id": "gaaa-4",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -384,7 +426,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Knowledge tools retrieve information.",
         "id": "gaaa-5",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -394,14 +438,16 @@ window.QUIZ_MODULES = [
           "Instructions"
         ],
         "options": [
-          "Camera hardware",
-          "Action logs",
           "Instructions",
-          "Training labels"
+          "Language model",
+          "Knowledge tools",
+          "Action tools"
         ],
         "explanation": "Instructions are usually encoded as a system prompt.",
         "id": "gaaa-6",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -412,13 +458,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Language model",
-          "Calendar",
-          "Microphone",
-          "Database"
+          "Instructions",
+          "Knowledge tools",
+          "Action tools"
         ],
         "explanation": "The language model provides language understanding and reasoning.",
         "id": "gaaa-7",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -428,48 +476,54 @@ window.QUIZ_MODULES = [
           "Sending an email"
         ],
         "options": [
-          "Looking up web results",
           "Sending an email",
-          "Searching a database",
-          "Reading reference documents"
+          "Searching a document library",
+          "Retrieving database records",
+          "Reading web search results"
         ],
         "explanation": "Action tools let agents take actions in external systems.",
         "id": "gaaa-8",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which statement best describes LLMs compared with SLMs?",
+        "prompt": "Which statement is generally true of large language models (LLMs) versus small language models (SLMs)?",
         "answer": "LLMs generally have broader capabilities but greater resource costs",
         "aliases": [
           "LLMs generally have broader capabilities but greater resource costs"
         ],
         "options": [
-          "LLMs always run locally on phones",
-          "SLMs never generate text",
-          "SLMs are trained only on images",
-          "LLMs generally have broader capabilities but greater resource costs"
+          "LLMs generally have broader capabilities but greater resource costs",
+          "LLMs generally use fewer resources for local deployment",
+          "SLMs are usually more general-purpose than LLMs",
+          "SLMs cannot process prompts or generate text"
         ],
         "explanation": "Large models can generalise well but are often costlier to train and use.",
         "id": "gaaa-9",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which is a common generative AI use case?",
+        "prompt": "Which of these is a common generative AI task, rather than a specialist recognition task?",
         "answer": "Summarising a complex document",
         "aliases": [
           "Summarising a complex document"
         ],
         "options": [
           "Summarising a complex document",
-          "Locating pixels in an image",
-          "Measuring a sound waveform",
-          "Detecting a bounding box"
+          "Locating text on a scanned receipt",
+          "Identifying the language of a document",
+          "Locating objects in a photograph"
         ],
         "explanation": "Generative AI can explain and summarise text.",
         "id": "gaaa-10",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -479,14 +533,16 @@ window.QUIZ_MODULES = [
           "Knowledge tool"
         ],
         "options": [
-          "Object detection",
           "Knowledge tool",
           "Action tool",
-          "Speech synthesis"
+          "Agent instructions",
+          "Language model"
         ],
         "explanation": "Searching external information uses a knowledge tool.",
         "id": "gaaa-11",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -497,13 +553,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Action tool",
-          "Semantic segmentation",
-          "Sentiment detection",
-          "Knowledge tool"
+          "Knowledge tool",
+          "Instructions",
+          "Language model"
         ],
         "explanation": "The tool is acting on a calendar, not merely reading it.",
         "id": "gaaa-12",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -513,14 +571,16 @@ window.QUIZ_MODULES = [
           "Small language model"
         ],
         "options": [
+          "Small language model",
+          "Large language model",
           "Speech recognition model",
-          "Only the largest language model",
-          "Object detection model",
-          "Small language model"
+          "Object detection model"
         ],
         "explanation": "Small models may suit focused local deployments.",
         "id": "gaaa-13",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -531,13 +591,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "It creates new text based on a prompt",
-          "It only retrieves an exact stored paragraph",
-          "It records microphone audio",
-          "It scans image pixels"
+          "It extracts named entities from text",
+          "It classifies text by sentiment",
+          "It detects the language of a prompt"
         ],
         "explanation": "Generative AI uses learned relationships to produce new content.",
         "id": "gaaa-14",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -547,14 +609,16 @@ window.QUIZ_MODULES = [
           "An AI agent"
         ],
         "options": [
-          "A training label",
           "An AI agent",
-          "A segmentation mask",
-          "An OCR pipeline"
+          "A standalone language model",
+          "A text classifier",
+          "A document extraction pipeline"
         ],
         "explanation": "Those three components are the core simplified agent structure.",
         "id": "gaaa-15",
-        "topic": "Generative AI and agents"
+        "topic": "Generative AI and agents",
+        "sourceUnit": "2-generative-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -571,7 +635,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "NLP covers techniques for understanding and analysing human language.",
         "id": "tanl-1",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -579,7 +645,8 @@ window.QUIZ_MODULES = [
         "answer": "Text classification",
         "aliases": [
           "Text classification",
-          "classification"
+          "classification",
+          "document classification"
         ],
         "options": [
           "Text classification",
@@ -589,14 +656,17 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Text classification places text in a selected category.",
         "id": "tanl-2",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What technique determines whether a review is positive, negative, or neutral?",
         "answer": "Sentiment analysis",
         "aliases": [
-          "Sentiment analysis"
+          "Sentiment analysis",
+          "sentiment classification"
         ],
         "options": [
           "Sentiment analysis",
@@ -606,7 +676,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Sentiment analysis evaluates the attitude expressed in text.",
         "id": "tanl-3",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -615,7 +687,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Entity detection",
           "named entity recognition",
-          "entity recognition"
+          "entity recognition",
+          "named-entity recognition",
+          "NER"
         ],
         "options": [
           "Entity detection",
@@ -625,14 +699,17 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Entity detection finds mentions of real-world entities in text.",
         "id": "tanl-4",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What three-letter abbreviation means personally identifiable information?",
         "answer": "PII",
         "aliases": [
-          "PII"
+          "PII",
+          "personally identifiable info"
         ],
         "options": [
           "PII",
@@ -642,7 +719,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "PII can include names, addresses and phone numbers.",
         "id": "tanl-5",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -652,14 +731,16 @@ window.QUIZ_MODULES = [
           "Language detection"
         ],
         "options": [
-          "Topic modelling",
-          "Speech synthesis",
-          "Image classification",
-          "Language detection"
+          "Language detection",
+          "Text classification",
+          "Entity detection",
+          "Sentiment analysis"
         ],
         "explanation": "Language detection identifies one or more languages present.",
         "id": "tanl-6",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -669,14 +750,16 @@ window.QUIZ_MODULES = [
           "Summarisation"
         ],
         "options": [
-          "Translation",
-          "Classification",
           "Summarisation",
-          "Transcription"
+          "Translation",
+          "Key-term extraction",
+          "Text classification"
         ],
         "explanation": "Summarisation shortens text while retaining the main points.",
         "id": "tanl-7",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -686,31 +769,35 @@ window.QUIZ_MODULES = [
           "Key-term extraction"
         ],
         "options": [
-          "Object detection",
           "Key-term extraction",
-          "Image segmentation",
-          "Speech synthesis"
+          "Named-entity detection",
+          "Sentiment analysis",
+          "Language detection"
         ],
         "explanation": "Key-term extraction identifies important terms.",
         "id": "tanl-8",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which scenario may favour specialist NLP tools with predictable results or custom rules?",
+        "prompt": "Which scenario is a reason to use a specialist NLP tool rather than open-ended generative AI?",
         "answer": "Rule-based text classification",
         "aliases": [
           "Rule-based text classification"
         ],
         "options": [
-          "Object localisation",
-          "3D video rendering",
-          "Photorealistic image generation",
-          "Rule-based text classification"
+          "Rule-based text classification",
+          "Open-ended story generation",
+          "Image-to-text description",
+          "Text-to-image generation"
         ],
-        "explanation": "Microsoft notes specialist NLP for repeatable classification and extraction workflows.",
+        "explanation": "Specialist NLP tools can produce predictable text classifications using custom rules.",
         "id": "tanl-9",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -721,13 +808,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "PII redaction",
-          "Visual search",
-          "Speech synthesis",
-          "Text-to-image generation"
+          "Sentiment analysis",
+          "Key-term extraction",
+          "Topic classification"
         ],
         "explanation": "Redacting personal information helps protect privacy.",
         "id": "tanl-10",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -738,13 +827,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Sentiment analysis",
-          "Speech synthesis",
           "Entity detection",
-          "Optical character recognition"
+          "Language detection",
+          "Summarisation"
         ],
         "explanation": "Sentiment analysis determines whether language conveys positive, negative or neutral sentiment.",
         "id": "tanl-11",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -754,14 +845,16 @@ window.QUIZ_MODULES = [
           "Entity detection"
         ],
         "options": [
-          "Speech synthesis",
-          "Text-to-speech",
           "Entity detection",
-          "Image classification"
+          "Sentiment analysis",
+          "Language detection",
+          "Key-term extraction"
         ],
         "explanation": "Entity detection identifies named entities in text.",
         "id": "tanl-12",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -771,14 +864,16 @@ window.QUIZ_MODULES = [
           "Language detection"
         ],
         "options": [
-          "Speech synthesis",
+          "Language detection",
+          "Text classification",
           "Sentiment analysis",
-          "Object detection",
-          "Language detection"
+          "Entity detection"
         ],
         "explanation": "Language detection identifies which languages are present.",
         "id": "tanl-13",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -789,13 +884,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "PII redaction",
-          "Audio generation",
-          "Image captioning",
-          "Object detection"
+          "Sentiment analysis",
+          "Entity detection without redaction",
+          "Text summarisation"
         ],
         "explanation": "Telephone numbers are examples of personally identifiable information.",
         "id": "tanl-14",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -806,13 +903,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Text classification",
-          "Speech synthesis",
-          "Image segmentation",
-          "Language generation"
+          "Sentiment analysis",
+          "Entity detection",
+          "Language detection"
         ],
         "explanation": "Assigning categories is text classification.",
         "id": "tanl-15",
-        "topic": "Text and natural language"
+        "topic": "Text and natural language",
+        "sourceUnit": "5-natural-language-processing",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -821,7 +920,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Speech recognition",
           "speech-to-text",
-          "STT"
+          "STT",
+          "speech to text",
+          "automatic speech recognition"
         ],
         "options": [
           "Speech recognition",
@@ -831,7 +932,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Speech recognition transcribes spoken language.",
         "id": "s-1",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -840,7 +943,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Speech synthesis",
           "text-to-speech",
-          "TTS"
+          "TTS",
+          "text to speech"
         ],
         "options": [
           "Speech synthesis",
@@ -850,14 +954,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Speech synthesis produces audible speech from text.",
         "id": "s-2",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What is the common abbreviation for text-to-speech?",
         "answer": "TTS",
         "aliases": [
-          "TTS"
+          "TTS",
+          "text-to-speech",
+          "text to speech"
         ],
         "options": [
           "TTS",
@@ -867,14 +975,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Text-to-speech is commonly abbreviated TTS.",
         "id": "s-3",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What is the common abbreviation for speech-to-text?",
         "answer": "STT",
         "aliases": [
-          "STT"
+          "STT",
+          "speech-to-text",
+          "speech to text"
         ],
         "options": [
           "STT",
@@ -884,14 +996,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Speech-to-text is commonly abbreviated STT.",
         "id": "s-4",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What term describes creating a written record of a meeting's speech?",
         "answer": "Transcription",
         "aliases": [
-          "Transcription"
+          "Transcription",
+          "speech transcription",
+          "automatic transcription"
         ],
         "options": [
           "Transcription",
@@ -901,7 +1017,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Transcription writes out what was spoken.",
         "id": "s-5",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -911,14 +1029,16 @@ window.QUIZ_MODULES = [
           "Audio to text"
         ],
         "options": [
-          "Text to image",
-          "Image to label",
           "Audio to text",
-          "Text to audio"
+          "Text to audio",
+          "Audio to another language",
+          "Text to image"
         ],
         "explanation": "Speech recognition interprets spoken words, frequently by transcribing them.",
         "id": "s-6",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -928,31 +1048,35 @@ window.QUIZ_MODULES = [
           "Text to audio"
         ],
         "options": [
-          "Audio to bounding boxes",
-          "Pixels to labels",
+          "Text to audio",
           "Audio to text",
-          "Text to audio"
+          "Audio to translated text",
+          "Image to text"
         ],
         "explanation": "Speech synthesis vocalises text.",
         "id": "s-7",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which is a use of AI speech technology?",
+        "prompt": "Which of the following is an application of AI speech recognition?",
         "answer": "Automated meeting transcription",
         "aliases": [
           "Automated meeting transcription"
         ],
         "options": [
-          "Receipt field extraction",
-          "Photograph object localisation",
           "Automated meeting transcription",
-          "Pixel-level image masking"
+          "Turning text into spoken narration",
+          "Translating written documents",
+          "Extracting fields from receipts"
         ],
         "explanation": "Meeting transcription uses speech recognition.",
         "id": "s-8",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -962,14 +1086,16 @@ window.QUIZ_MODULES = [
           "Background noise"
         ],
         "options": [
-          "Bounding-box overlap",
-          "Image rotation",
-          "Document page margins",
-          "Background noise"
+          "Background noise",
+          "Unclear object boundaries",
+          "Inaccurate text-field positions",
+          "Ambiguous image labels"
         ],
         "explanation": "Speech systems must deal with noise and interrupted speakers.",
         "id": "s-9",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -979,14 +1105,16 @@ window.QUIZ_MODULES = [
           "Speech synthesis"
         ],
         "options": [
-          "Image classification",
-          "Text entity extraction",
-          "OCR",
-          "Speech synthesis"
+          "Speech synthesis",
+          "Speech recognition",
+          "Speech translation",
+          "Audio transcription"
         ],
         "explanation": "The assistant's text response can be turned into audio.",
         "id": "s-10",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -996,14 +1124,16 @@ window.QUIZ_MODULES = [
           "Speech recognition"
         ],
         "options": [
-          "Object detection",
           "Speech recognition",
-          "Semantic segmentation",
-          "Speech synthesis"
+          "Speech synthesis",
+          "Speech translation",
+          "Speaker identification"
         ],
         "explanation": "Speech-to-text produces the transcript.",
         "id": "s-11",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1014,30 +1144,34 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Speech synthesis",
-          "Optical character recognition",
-          "Image segmentation",
-          "Text classification"
+          "Speech recognition",
+          "Sentiment analysis",
+          "Speech translation"
         ],
         "explanation": "Text-to-speech reads instructions aloud.",
         "id": "s-12",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
-        "prompt": "A meeting app generates a written record of discussion. Which capability is key?",
+        "prompt": "A meeting app turns spoken discussion into a written transcript. Which capability performs the audio-to-text conversion?",
         "answer": "Speech recognition",
         "aliases": [
           "Speech recognition"
         ],
         "options": [
-          "Visual search",
           "Speech recognition",
-          "Image classification",
-          "Speech synthesis"
+          "Speech synthesis",
+          "Speaker identification",
+          "Language detection"
         ],
         "explanation": "The audio must be converted to text.",
         "id": "s-13",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1047,14 +1181,16 @@ window.QUIZ_MODULES = [
           "Speech recognition and synthesis"
         ],
         "options": [
-          "Object detection and segmentation",
-          "Entity extraction and OCR",
           "Speech recognition and synthesis",
-          "Image classification and OCR"
+          "Speech recognition and image classification",
+          "Speech synthesis and object detection",
+          "Speech translation and segmentation"
         ],
         "explanation": "Input requires speech recognition; output requires speech synthesis.",
         "id": "s-14",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1065,13 +1201,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Speech translation",
-          "PII redaction",
-          "Visual search",
-          "Image tagging"
+          "Speech recognition without translation",
+          "Speech synthesis without translation",
+          "Speaker identification"
         ],
         "explanation": "Speech translation combines spoken-language interpretation and generation.",
         "id": "s-15",
-        "topic": "Speech"
+        "topic": "Speech",
+        "sourceUnit": "4-speech",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1088,14 +1226,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Computer vision analyses images and video.",
         "id": "cv-1",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What technique predicts a main label for an entire image?",
         "answer": "Image classification",
         "aliases": [
-          "Image classification"
+          "Image classification",
+          "image labeling",
+          "image labelling"
         ],
         "options": [
           "Image classification",
@@ -1105,7 +1247,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Image classification identifies the subject of an image.",
         "id": "cv-2",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1122,14 +1266,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Object detection locates individual items in an image.",
         "id": "cv-3",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "recall",
-        "prompt": "What technique labels individual pixels belonging to an object?",
+        "prompt": "What computer vision technique identifies the individual pixels that belong to an object?",
         "answer": "Semantic segmentation",
         "aliases": [
-          "Semantic segmentation"
+          "Semantic segmentation",
+          "pixel-level segmentation",
+          "semantic image segmentation"
         ],
         "options": [
           "Semantic segmentation",
@@ -1139,15 +1287,21 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Semantic segmentation works at pixel level.",
         "id": "cv-4",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "recall",
-        "prompt": "What term describes a model combining visual and text features?",
+        "prompt": "What type of model combines visual features with associated text descriptions?",
         "answer": "Multimodal model",
         "aliases": [
           "Multimodal model",
-          "multi-modal model"
+          "multi-modal model",
+          "multimodal",
+          "multi modal",
+          "multi-modal",
+          "multi modal model"
         ],
         "options": [
           "Multimodal model",
@@ -1157,7 +1311,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Multimodal models can connect images and text descriptions.",
         "id": "cv-5",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1167,14 +1323,16 @@ window.QUIZ_MODULES = [
           "Bounding boxes around objects"
         ],
         "options": [
-          "One category for a full document",
           "Bounding boxes around objects",
-          "A speech transcript",
-          "A sentiment score"
+          "A single category for the whole image",
+          "Pixel-level object masks",
+          "A caption describing the whole image"
         ],
         "explanation": "Object detection typically identifies regions containing objects.",
         "id": "cv-6",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1185,30 +1343,34 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "It assigns labels at pixel level",
-          "It produces spoken audio",
-          "It only counts objects",
-          "It identifies document language"
+          "It assigns one label to the entire image",
+          "It marks objects with bounding boxes",
+          "It generates text describing the image"
         ],
         "explanation": "Segmentation identifies specific image pixels belonging to objects.",
         "id": "cv-7",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which model suits identifying the main subject in a photograph?",
+        "prompt": "Which computer vision task assigns a main-subject label to an entire photograph, without locating individual objects?",
         "answer": "Image classification",
         "aliases": [
           "Image classification"
         ],
         "options": [
-          "Speech synthesis",
-          "Sentiment analysis",
           "Image classification",
-          "Language detection"
+          "Object detection",
+          "Semantic segmentation",
+          "Image captioning"
         ],
-        "explanation": "Classification predicts a main image label.",
+        "explanation": "Image classification predicts the main subject label for an image. Object detection instead locates objects within it.",
         "id": "cv-8",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1218,14 +1380,16 @@ window.QUIZ_MODULES = [
           "Visual features and text"
         ],
         "options": [
-          "Only table columns",
           "Visual features and text",
-          "Only microphone signals",
-          "Only numerical timestamps"
+          "Visual features and bounding boxes only",
+          "Spoken commands and calendar actions",
+          "Training labels and model evaluation scores"
         ],
         "explanation": "Microsoft describes combining image features and associated text descriptions.",
         "id": "cv-9",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1236,13 +1400,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Monitoring retail shelf stock from video",
-          "Translating a paragraph",
-          "Reading an answer aloud",
-          "Summarising a meeting transcript"
+          "Classifying customer-review sentiment",
+          "Transcribing recorded meetings",
+          "Summarising policy documents"
         ],
         "explanation": "Video analysis can identify items and stock levels.",
         "id": "cv-10",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1252,31 +1418,35 @@ window.QUIZ_MODULES = [
           "Object detection"
         ],
         "options": [
-          "Language detection",
           "Object detection",
-          "Text classification",
-          "Speech synthesis"
+          "Image classification",
+          "Semantic segmentation",
+          "Image captioning"
         ],
         "explanation": "Bounding boxes indicate the position of each detected object.",
         "id": "cv-11",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
-        "prompt": "A photo app labels an uploaded image 'cat'. Which task best fits?",
+        "prompt": "A photo app assigns the overall label “cat” to an uploaded image, without marking any objects. Which task fits?",
         "answer": "Image classification",
         "aliases": [
           "Image classification"
         ],
         "options": [
-          "Speech recognition",
-          "PII redaction",
-          "Text summarisation",
-          "Image classification"
+          "Image classification",
+          "Object detection",
+          "Semantic segmentation",
+          "Image captioning"
         ],
         "explanation": "It assigns a main label to an image.",
         "id": "cv-12",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1286,31 +1456,35 @@ window.QUIZ_MODULES = [
           "Semantic segmentation"
         ],
         "options": [
-          "Speech translation",
-          "Sentiment analysis",
+          "Semantic segmentation",
+          "Object detection",
           "Image classification",
-          "Semantic segmentation"
+          "Image captioning"
         ],
         "explanation": "Pixel-level identification is semantic segmentation.",
         "id": "cv-13",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
-        "prompt": "A service generates natural-language descriptions of uploaded photos. What may help?",
+        "prompt": "A service generates natural-language descriptions of uploaded photos by combining image features with language. What kind of model may it use?",
         "answer": "Multimodal model",
         "aliases": [
           "Multimodal model"
         ],
         "options": [
-          "Speech-to-text only",
-          "Text classification only",
           "Multimodal model",
-          "Audio-only model"
+          "Image classifier",
+          "Object detector",
+          "Semantic segmenter"
         ],
         "explanation": "A multimodal model associates visual information with text.",
         "id": "cv-14",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1320,21 +1494,24 @@ window.QUIZ_MODULES = [
           "Object detection"
         ],
         "options": [
-          "Speech synthesis",
-          "Sentiment analysis",
           "Object detection",
-          "Language detection"
+          "Image classification",
+          "Semantic segmentation",
+          "Image captioning"
         ],
         "explanation": "Object detection finds objects and their positions.",
         "id": "cv-15",
-        "topic": "Computer vision"
+        "topic": "Computer vision",
+        "sourceUnit": "3-computer-vision",
+        "coverage": "module"
       },
       {
         "type": "recall",
-        "prompt": "What three-letter abbreviation identifies the technology used to recognise text in images?",
+        "prompt": "What three-letter abbreviation names the technology used to recognise text in images?",
         "answer": "OCR",
         "aliases": [
-          "OCR"
+          "OCR",
+          "optical character recognition"
         ],
         "options": [
           "OCR",
@@ -1344,14 +1521,17 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR is optical character recognition.",
         "id": "ie-1",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "What does OCR stand for?",
         "answer": "Optical character recognition",
         "aliases": [
-          "Optical character recognition"
+          "Optical character recognition",
+          "optical character recognition"
         ],
         "options": [
           "Optical character recognition",
@@ -1361,7 +1541,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR recognises text shown in visual data.",
         "id": "ie-2",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1378,7 +1560,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Unstructured sources include forms, images and recordings.",
         "id": "ie-3",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1396,7 +1580,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Microsoft demonstrates extracting values from a receipt.",
         "id": "ie-4",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1404,7 +1590,8 @@ window.QUIZ_MODULES = [
         "answer": "Information extraction",
         "aliases": [
           "Information extraction",
-          "document information extraction"
+          "document information extraction",
+          "document extraction"
         ],
         "options": [
           "Information extraction",
@@ -1414,24 +1601,28 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Information extraction finds useful values in documents.",
         "id": "ie-5",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "What does OCR primarily identify in a scanned document?",
+        "prompt": "In document analysis, what does optical character recognition (OCR) primarily detect?",
         "answer": "Text and its location",
         "aliases": [
           "Text and its location"
         ],
         "options": [
-          "The sentiment of a speaker",
-          "Future stock prices",
-          "The document owner's intent",
-          "Text and its location"
+          "Text and its location",
+          "The purpose of a document",
+          "The emotional tone of a document",
+          "The category of a document"
         ],
-        "explanation": "OCR identifies text from an image, often along with text locations.",
+        "explanation": "OCR identifies text in images and its location. Further models can interpret text as specific document fields.",
         "id": "ie-6",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1441,14 +1632,16 @@ window.QUIZ_MODULES = [
           "Interpretation of fields and values"
         ],
         "options": [
-          "Speech synthesis",
-          "Image generation",
-          "Language translation only",
-          "Interpretation of fields and values"
+          "Interpretation of fields and values",
+          "Assigning a sentiment label",
+          "Generating a speech response",
+          "Classifying the document language"
         ],
         "explanation": "An analytical model may map recognised text to structured fields.",
         "id": "ie-7",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1458,14 +1651,16 @@ window.QUIZ_MODULES = [
           "A scanned handwritten form"
         ],
         "options": [
-          "A normalised database table",
-          "A CSV with fixed columns",
-          "A relational database row",
-          "A scanned handwritten form"
+          "A scanned handwritten form",
+          "A table with fixed database columns",
+          "A validated structured JSON record",
+          "A relational database row"
         ],
         "explanation": "Scanned forms are unstructured input sources.",
         "id": "ie-8",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1476,13 +1671,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Processing expense claims",
-          "Identifying sentiment in reviews",
-          "Generating speech from text",
-          "Classifying an image's main subject"
+          "Classifying the sentiment of reviews",
+          "Translating website content",
+          "Generating descriptions of photos"
         ],
         "explanation": "Expense claims can extract dates, amounts and other fields.",
         "id": "ie-9",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1492,14 +1689,16 @@ window.QUIZ_MODULES = [
           "Follow-up actions"
         ],
         "options": [
-          "Camera focal length",
           "Follow-up actions",
-          "Pixel colour temperature",
-          "Audio file extension"
+          "Speaker emotion alone",
+          "Audio sampling rate",
+          "Microphone model information"
         ],
         "explanation": "Meeting analysis can identify key points and next actions.",
         "id": "ie-10",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1509,14 +1708,16 @@ window.QUIZ_MODULES = [
           "OCR plus field interpretation"
         ],
         "options": [
-          "Speech synthesis plus segmentation",
-          "Object detection plus voice cloning",
           "OCR plus field interpretation",
-          "Image generation plus translation"
+          "Speech recognition plus summarisation",
+          "Text classification plus language detection",
+          "Image classification plus sentiment analysis"
         ],
         "explanation": "OCR reads the text and field analysis finds the total.",
         "id": "ie-11",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1526,14 +1727,16 @@ window.QUIZ_MODULES = [
           "Document information extraction"
         ],
         "options": [
-          "Sentiment scoring",
-          "Text-to-image generation",
-          "Speech generation",
-          "Document information extraction"
+          "Document information extraction",
+          "Image classification alone",
+          "Speech synthesis",
+          "Sentiment analysis"
         ],
         "explanation": "Information extraction can digitise records and support indexing.",
         "id": "ie-12",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1543,31 +1746,35 @@ window.QUIZ_MODULES = [
           "OCR"
         ],
         "options": [
-          "Speech synthesis",
-          "Text translation",
           "OCR",
-          "Sentiment analysis"
+          "Image classification",
+          "Object detection",
+          "Semantic segmentation"
         ],
         "explanation": "OCR reads printed text visible in photographs.",
         "id": "ie-13",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
-        "prompt": "A system examines meeting transcripts and lists next steps. Which outcome is this?",
+        "prompt": "A system examines meeting transcripts and lists decisions and follow-up actions. What outcome does this illustrate?",
         "answer": "Insight extraction",
         "aliases": [
           "Insight extraction"
         ],
         "options": [
-          "Speech synthesis",
-          "Object localisation",
           "Insight extraction",
-          "Image classification"
+          "Speech synthesis",
+          "Object detection",
+          "Language identification"
         ],
         "explanation": "The system extracts actionable information from recorded discussion.",
         "id": "ie-14",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1577,14 +1784,16 @@ window.QUIZ_MODULES = [
           "OCR and document extraction"
         ],
         "options": [
-          "Speech synthesis alone",
-          "Text-to-speech alone",
+          "OCR and document extraction",
           "Image classification alone",
-          "OCR and document extraction"
+          "Speech synthesis alone",
+          "Sentiment analysis alone"
         ],
         "explanation": "Recognised text and extracted fields can support search indexing.",
         "id": "ie-15",
-        "topic": "Information extraction"
+        "topic": "Information extraction",
+        "sourceUnit": "6-extract-insights",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1601,14 +1810,17 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Fairness asks whether outcomes are biased or discriminatory.",
         "id": "ra-1",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
         "prompt": "Which principle addresses protection of personal information and systems?",
         "answer": "Privacy and security",
         "aliases": [
-          "Privacy and security"
+          "Privacy and security",
+          "privacy & security"
         ],
         "options": [
           "Privacy and security",
@@ -1618,15 +1830,18 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Privacy and security protect sensitive personal and organisational information.",
         "id": "ra-2",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
-        "prompt": "Which principle ensures people with differing needs can use AI systems?",
+        "prompt": "Which responsible-AI principle aims to make systems usable by people with differing abilities and needs?",
         "answer": "Inclusiveness",
         "aliases": [
           "Inclusiveness",
-          "inclusion"
+          "inclusion",
+          "accessibility"
         ],
         "options": [
           "Inclusiveness",
@@ -1636,7 +1851,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Inclusiveness works to prevent groups from being excluded.",
         "id": "ra-3",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1653,7 +1870,9 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Transparency includes disclosing AI use and relevant limitations.",
         "id": "ra-4",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "recall",
@@ -1670,24 +1889,29 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Accountability requires governance and clear responsibility.",
         "id": "ra-5",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which principle addresses the fact that AI can make mistakes?",
+        "prompt": "Which responsible-AI principle acknowledges that probabilistic systems can make mistakes and calls for mitigation?",
         "answer": "Reliability and safety",
         "aliases": [
-          "Reliability and safety"
+          "Reliability and safety",
+          "safety and reliability"
         ],
         "options": [
-          "Language detection",
-          "Inclusiveness",
+          "Reliability and safety",
+          "Fairness",
           "Transparency",
-          "Reliability and safety"
+          "Accountability"
         ],
         "explanation": "Reliability and safety mitigate risks from fallible AI systems.",
         "id": "ra-6",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1697,14 +1921,16 @@ window.QUIZ_MODULES = [
           "Fairness"
         ],
         "options": [
-          "Object detection",
           "Fairness",
-          "Accountability",
-          "Speech synthesis"
+          "Reliability and safety",
+          "Transparency",
+          "Accountability"
         ],
         "explanation": "Bias in data can produce discriminatory results.",
         "id": "ra-7",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1714,14 +1940,16 @@ window.QUIZ_MODULES = [
           "Content filtering"
         ],
         "options": [
-          "Increasing font size",
-          "Changing a domain name",
-          "Increasing image resolution",
-          "Content filtering"
+          "Content filtering",
+          "Data anonymisation alone",
+          "Model monitoring alone",
+          "An accessibility review alone"
         ],
         "explanation": "Content filters can mitigate harmful outputs, though they are not sufficient alone.",
         "id": "ra-8",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
@@ -1731,31 +1959,35 @@ window.QUIZ_MODULES = [
           "Transparency"
         ],
         "options": [
-          "Reliability",
           "Transparency",
           "Inclusiveness",
-          "Privacy and security"
+          "Privacy and security",
+          "Accountability"
         ],
         "explanation": "Transparency requires clear information about the use and limits of AI.",
         "id": "ra-9",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "match",
-        "prompt": "Which principle requires governance over AI deployment decisions?",
+        "prompt": "Which responsible-AI principle involves governance and responsibility for deployment decisions?",
         "answer": "Accountability",
         "aliases": [
           "Accountability"
         ],
         "options": [
-          "Sentiment analysis",
-          "OCR",
-          "Speech synthesis",
-          "Accountability"
+          "Accountability",
+          "Fairness",
+          "Transparency",
+          "Reliability and safety"
         ],
         "explanation": "Developers and distributors are accountable for how their AI systems are governed.",
         "id": "ra-10",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1765,14 +1997,16 @@ window.QUIZ_MODULES = [
           "Fairness"
         ],
         "options": [
-          "Speech synthesis",
-          "Object detection",
-          "OCR",
-          "Fairness"
+          "Fairness",
+          "Inclusiveness",
+          "Reliability and safety",
+          "Privacy and security"
         ],
         "explanation": "Fairness includes checking for discriminatory decisions.",
         "id": "ra-11",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1783,13 +2017,15 @@ window.QUIZ_MODULES = [
         ],
         "options": [
           "Reliability and safety",
-          "Inclusiveness",
           "Transparency",
-          "Privacy and security"
+          "Inclusiveness",
+          "Accountability"
         ],
         "explanation": "Confidence thresholds can prevent unsafe actions.",
         "id": "ra-12",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1799,14 +2035,16 @@ window.QUIZ_MODULES = [
           "Privacy and security"
         ],
         "options": [
-          "Text classification",
-          "Speech recognition",
+          "Privacy and security",
           "Fairness",
-          "Privacy and security"
+          "Inclusiveness",
+          "Transparency"
         ],
         "explanation": "Deleting unnecessary personal data reduces privacy risks.",
         "id": "ra-13",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1816,14 +2054,16 @@ window.QUIZ_MODULES = [
           "Inclusiveness"
         ],
         "options": [
-          "Image classification",
-          "Accountability",
           "Inclusiveness",
-          "Sentiment analysis"
+          "Fairness",
+          "Transparency",
+          "Privacy and security"
         ],
         "explanation": "Captions improve access for people with hearing impairments.",
         "id": "ra-14",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       },
       {
         "type": "scenario",
@@ -1833,14 +2073,16 @@ window.QUIZ_MODULES = [
           "Transparency"
         ],
         "options": [
-          "Speech synthesis",
-          "Object detection",
-          "OCR",
-          "Transparency"
+          "Transparency",
+          "Accountability",
+          "Fairness",
+          "Inclusiveness"
         ],
         "explanation": "Users should know that AI is involved and understand its relevant limitations.",
         "id": "ra-15",
-        "topic": "Responsible AI"
+        "topic": "Responsible AI",
+        "sourceUnit": "7-responsible-ai",
+        "coverage": "module"
       }
     ]
   }
