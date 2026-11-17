@@ -5026,7 +5026,7 @@ window.QUIZ_MODULES = [
         "id": "information-extraction-16",
         "type": "recall",
         "topic": "Extraction basics",
-        "sourceUnit": "2-extraction",
+        "sourceUnit": "2-overview",
         "prompt": "What term refers to turning an unstructured document into named data values?",
         "answer": "Information extraction",
         "aliases": [
@@ -5040,13 +5040,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Information extraction identifies useful structured facts from source content.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-extraction"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-overview"
       },
       {
         "id": "information-extraction-17",
         "type": "recall",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "What three-letter abbreviation means optical character recognition?",
         "answer": "OCR",
         "aliases": [
@@ -5060,13 +5060,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR recognises printed or handwritten text from images where supported.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-18",
         "type": "recall",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "What output identifies the position of recognised text in a page image?",
         "answer": "Bounding box",
         "aliases": [
@@ -5080,13 +5080,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR can provide coordinates for recognised words or lines.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-19",
         "type": "recall",
         "topic": "Fields and mapping",
-        "sourceUnit": "4-fields",
+        "sourceUnit": "4-form-extraction",
         "prompt": "What term describes a named item such as invoice date or total in a document?",
         "answer": "Field",
         "aliases": [
@@ -5100,13 +5100,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "A field identifies a specific type of information to extract.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-fields"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-form-extraction"
       },
       {
         "id": "information-extraction-20",
         "type": "recall",
         "topic": "Fields and mapping",
-        "sourceUnit": "4-fields",
+        "sourceUnit": "4-form-extraction",
         "prompt": "What is linking recognised document values to named data fields called?",
         "answer": "Field mapping",
         "aliases": [
@@ -5120,13 +5120,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Mapping associates extracted values with the right schema fields.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-fields"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-form-extraction"
       },
       {
         "id": "information-extraction-21",
         "type": "match",
         "topic": "Extraction basics",
-        "sourceUnit": "2-extraction",
+        "sourceUnit": "2-overview",
         "prompt": "What type of input is commonly described as unstructured?",
         "answer": "Free-form text or scanned documents",
         "aliases": [
@@ -5140,13 +5140,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Unstructured information needs interpretation before analysis.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-extraction"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-overview"
       },
       {
         "id": "information-extraction-22",
         "type": "match",
         "topic": "Extraction basics",
-        "sourceUnit": "2-extraction",
+        "sourceUnit": "2-overview",
         "prompt": "Which goal best characterises AI information extraction?",
         "answer": "Find specific usable facts in source content",
         "aliases": [
@@ -5160,13 +5160,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Extraction turns source content into structured data.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-extraction"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-overview"
       },
       {
         "id": "information-extraction-23",
         "type": "match",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "Which capability recognises letters and words in a photographed receipt?",
         "answer": "OCR",
         "aliases": [
@@ -5180,13 +5180,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR extracts readable text from an image.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-24",
         "type": "match",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "What is the main limitation of OCR alone on a complex form?",
         "answer": "Recognised text may lack its field meaning",
         "aliases": [
@@ -5200,13 +5200,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Field extraction interprets what recognised text represents.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-25",
         "type": "match",
         "topic": "Fields and mapping",
-        "sourceUnit": "4-fields",
+        "sourceUnit": "4-form-extraction",
         "prompt": "Which output is an example of a field-value pair?",
         "answer": "Invoice total: £127.50",
         "aliases": [
@@ -5220,13 +5220,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "A field-value pair attaches a data value to a named field.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-fields"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-form-extraction"
       },
       {
         "id": "information-extraction-26",
         "type": "scenario",
         "topic": "Extraction basics",
-        "sourceUnit": "2-extraction",
+        "sourceUnit": "2-overview",
         "prompt": "An insurer wants amounts and dates from emailed invoices. What is the key workload?",
         "answer": "Document information extraction",
         "aliases": [
@@ -5240,13 +5240,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Extraction captures specified fields for downstream systems.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-extraction"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/2-overview"
       },
       {
         "id": "information-extraction-27",
         "type": "scenario",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "A scanned form is visually clear but not searchable as text. What is the first useful capability?",
         "answer": "Optical character recognition",
         "aliases": [
@@ -5260,13 +5260,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "OCR converts page imagery into machine-readable text.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-28",
         "type": "scenario",
         "topic": "Optical character recognition",
-        "sourceUnit": "3-ocr",
+        "sourceUnit": "3-vision-extraction",
         "prompt": "A receipt photo is skewed and blurry, causing misread totals. What should be improved first?",
         "answer": "Image capture quality and preprocessing",
         "aliases": [
@@ -5280,13 +5280,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Clearer images and preprocessing help OCR accuracy.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-ocr"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/3-vision-extraction"
       },
       {
         "id": "information-extraction-29",
         "type": "scenario",
         "topic": "Fields and mapping",
-        "sourceUnit": "4-fields",
+        "sourceUnit": "4-form-extraction",
         "prompt": "A form includes two dates: issued and due. What must the extraction system distinguish?",
         "answer": "Each value's corresponding field label",
         "aliases": [
@@ -5300,13 +5300,13 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Field mapping distinguishes similarly formatted values by context.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-fields"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-form-extraction"
       },
       {
         "id": "information-extraction-30",
         "type": "scenario",
         "topic": "Fields and mapping",
-        "sourceUnit": "4-fields",
+        "sourceUnit": "4-form-extraction",
         "prompt": "An invoice extractor fills “Supplier” with the customer's name. What failed?",
         "answer": "Field identification and mapping",
         "aliases": [
@@ -5320,7 +5320,7 @@ window.QUIZ_MODULES = [
         ],
         "explanation": "Values must be assigned to the correct document fields.",
         "coverage": "source",
-        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-fields"
+        "sourceUrl": "https://learn.microsoft.com/en-gb/training/modules/introduction-information-extraction/4-form-extraction"
       }
     ]
   },
