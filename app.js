@@ -12,10 +12,17 @@ function recallCorrect(q,input){
   const value=singular(norm(input));if(!value)return false;
   const allowed=[q.answer,...(q.aliases||[])].map(v=>singular(norm(v)));
   if(allowed.includes(value))return true;
+  // Accept spaces/hyphens omitted or inserted within an otherwise identical term,
+  // but never when that compact spelling corresponds to a competing option.
+  const compact=s=>s.replace(/ /g,'');
+  const condensed=compact(value);
+  const competitors=(q.options||[]).map(v=>singular(norm(v))).filter(v=>!allowed.includes(v));
+  if(condensed.length>=6 && allowed.some(a=>compact(a)===condensed) &&
+     !competitors.some(d=>compact(d)===condensed))return true;
   // Distinctive shorthand for a two-word tool type: 'knowledge' for 'knowledge tool'.
-  const shorthand=allowed.filter(a=>/^[a-z]{5,} tool$/.test(a)).map(a=>a.slice(0,-5));
+  const shorthand=allowed.filter(a=>/^[a-z]{5,} (?:tool|model)$/.test(a)).map(a=>a.replace(/ (?:tool|model)$/,''));
   const distractors=(q.options||[]).map(v=>singular(norm(v))).filter(v=>!allowed.includes(v));
-  if(shorthand.includes(value)&&!distractors.some(d=>d===value||d.startsWith(value+' ')))return true;
+  if(shorthand.some(a=>a.replace(/ /g,'')===value.replace(/ /g,''))&&!distractors.some(d=>d===value||d.startsWith(value+' ')))return true;
   // At most one typo for longer terms. Never override a competing answer.
   const candidate=allowed.some(a=>a.length>=7&&value.length>=7&&a.slice(0,2)===value.slice(0,2)&&distanceOne(a,value));
   return candidate&&!distractors.some(d=>d===value||(d.length>=7&&distanceOne(d,value)));
