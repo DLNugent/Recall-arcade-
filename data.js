@@ -89,7 +89,8 @@ window.QUIZ_MODULES = [
         "answer": "Inference",
         "aliases": [
           "Inference",
-          "model inference"
+          "model inference",
+          "inferencing"
         ],
         "options": [
           "Inference",
@@ -110,7 +111,9 @@ window.QUIZ_MODULES = [
         "answer": "Training",
         "aliases": [
           "Training",
-          "model training"
+          "model training",
+          "training a model",
+          "model training process"
         ],
         "options": [
           "Training",
@@ -131,7 +134,10 @@ window.QUIZ_MODULES = [
         "answer": "Unseen data",
         "aliases": [
           "Unseen data",
-          "new data"
+          "new data",
+          "previously unseen data",
+          "unseen examples",
+          "previously unseen examples"
         ],
         "options": [
           "Unseen data",
@@ -352,7 +358,9 @@ window.QUIZ_MODULES = [
         "answer": "Prompt",
         "aliases": [
           "Prompt",
-          "user prompt"
+          "user prompt",
+          "instruction prompt",
+          "text prompt"
         ],
         "options": [
           "Prompt",
@@ -372,7 +380,8 @@ window.QUIZ_MODULES = [
         "prompt": "What three-letter abbreviation is used for a large language model?",
         "answer": "LLM",
         "aliases": [
-          "LLM"
+          "LLM",
+          "large language model"
         ],
         "options": [
           "LLM",
@@ -392,7 +401,8 @@ window.QUIZ_MODULES = [
         "prompt": "What three-letter abbreviation is used for a small language model?",
         "answer": "SLM",
         "aliases": [
-          "SLM"
+          "SLM",
+          "small language model"
         ],
         "options": [
           "SLM",
@@ -414,7 +424,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Semantic relationships",
           "semantics",
-          "semantic relationship"
+          "semantic relationship",
+          "semantic associations"
         ],
         "options": [
           "Semantic relationships",
@@ -435,7 +446,9 @@ window.QUIZ_MODULES = [
         "answer": "Knowledge tool",
         "aliases": [
           "Knowledge tool",
-          "knowledge tools"
+          "knowledge tools",
+          "knowledge",
+          "knowledge retrieval tool"
         ],
         "options": [
           "Knowledge tool",
@@ -655,7 +668,8 @@ window.QUIZ_MODULES = [
         "prompt": "What three-letter term denotes natural language processing?",
         "answer": "NLP",
         "aliases": [
-          "NLP"
+          "NLP",
+          "natural language processing"
         ],
         "options": [
           "NLP",
@@ -698,7 +712,8 @@ window.QUIZ_MODULES = [
         "answer": "Sentiment analysis",
         "aliases": [
           "Sentiment analysis",
-          "sentiment classification"
+          "sentiment classification",
+          "sentiment"
         ],
         "options": [
           "Sentiment analysis",
@@ -743,7 +758,8 @@ window.QUIZ_MODULES = [
         "answer": "PII",
         "aliases": [
           "PII",
-          "personally identifiable info"
+          "personally identifiable info",
+          "personally identifiable information"
         ],
         "options": [
           "PII",
@@ -967,7 +983,8 @@ window.QUIZ_MODULES = [
           "speech-to-text",
           "STT",
           "speech to text",
-          "automatic speech recognition"
+          "automatic speech recognition",
+          "ASR"
         ],
         "options": [
           "Speech recognition",
@@ -990,7 +1007,8 @@ window.QUIZ_MODULES = [
           "Speech synthesis",
           "text-to-speech",
           "TTS",
-          "text to speech"
+          "text to speech",
+          "speech generation"
         ],
         "options": [
           "Speech synthesis",
@@ -1056,7 +1074,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Transcription",
           "speech transcription",
-          "automatic transcription"
+          "automatic transcription",
+          "transcribing",
+          "transcript"
         ],
         "options": [
           "Transcription",
@@ -1318,7 +1338,9 @@ window.QUIZ_MODULES = [
         "prompt": "What technique identifies the locations of objects within an image?",
         "answer": "Object detection",
         "aliases": [
-          "Object detection"
+          "Object detection",
+          "object localisation and detection",
+          "object localization and detection"
         ],
         "options": [
           "Object detection",
@@ -1340,7 +1362,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Semantic segmentation",
           "pixel-level segmentation",
-          "semantic image segmentation"
+          "semantic image segmentation",
+          "semantic pixel segmentation"
         ],
         "options": [
           "Semantic segmentation",
@@ -1365,7 +1388,8 @@ window.QUIZ_MODULES = [
           "multimodal",
           "multi modal",
           "multi-modal",
-          "multi modal model"
+          "multi modal model",
+          "multimodal AI model"
         ],
         "options": [
           "Multimodal model",
@@ -1627,7 +1651,8 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes data that is not organised into fixed fields, such as scans and recordings?",
         "answer": "Unstructured data",
         "aliases": [
-          "Unstructured data"
+          "Unstructured data",
+          "non structured data"
         ],
         "options": [
           "Unstructured data",
@@ -1670,7 +1695,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Information extraction",
           "document information extraction",
-          "document extraction"
+          "document extraction",
+          "extracting information",
+          "extracting document information"
         ],
         "options": [
           "Information extraction",
@@ -1911,7 +1938,9 @@ window.QUIZ_MODULES = [
         "answer": "Privacy and security",
         "aliases": [
           "Privacy and security",
-          "privacy & security"
+          "privacy & security",
+          "security and privacy",
+          "privacy security"
         ],
         "options": [
           "Privacy and security",
@@ -1933,7 +1962,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Inclusiveness",
           "inclusion",
-          "accessibility"
+          "accessibility",
+          "inclusivity"
         ],
         "options": [
           "Inclusiveness",
@@ -1953,7 +1983,8 @@ window.QUIZ_MODULES = [
         "prompt": "Which principle requires openness about how AI works and its limitations?",
         "answer": "Transparency",
         "aliases": [
-          "Transparency"
+          "Transparency",
+          "transparent AI"
         ],
         "options": [
           "Transparency",
@@ -1973,7 +2004,8 @@ window.QUIZ_MODULES = [
         "prompt": "Which principle means people and organisations retain responsibility for their AI solutions?",
         "answer": "Accountability",
         "aliases": [
-          "Accountability"
+          "Accountability",
+          "being accountable"
         ],
         "options": [
           "Accountability",
@@ -2221,7 +2253,10 @@ window.QUIZ_MODULES = [
         "prompt": "What term names the numerical vector representation of a token that captures contextual characteristics?",
         "answer": "Embedding",
         "aliases": [
-          "Embedding"
+          "Embedding",
+          "token embedding",
+          "embedding vector",
+          "vector embedding"
         ],
         "options": [
           "Embedding",
@@ -2241,7 +2276,10 @@ window.QUIZ_MODULES = [
         "prompt": "What mechanism weighs the relevance of different tokens in a transformer?",
         "answer": "Attention",
         "aliases": [
-          "Attention"
+          "Attention",
+          "attention mechanism",
+          "self attention",
+          "self attention mechanism"
         ],
         "options": [
           "Attention",
@@ -2261,7 +2299,10 @@ window.QUIZ_MODULES = [
         "prompt": "What is the process of splitting text into words, subwords, and punctuation units?",
         "answer": "Tokenization",
         "aliases": [
-          "Tokenization"
+          "Tokenization",
+          "tokenisation",
+          "tokenizing",
+          "tokenising"
         ],
         "options": [
           "Tokenization",
@@ -2282,7 +2323,9 @@ window.QUIZ_MODULES = [
         "answer": "System prompt",
         "aliases": [
           "System prompt",
-          "system instructions"
+          "system instructions",
+          "system message",
+          "system instruction"
         ],
         "options": [
           "System prompt",
@@ -2303,7 +2346,9 @@ window.QUIZ_MODULES = [
         "answer": "Multi-agent system",
         "aliases": [
           "Multi-agent system",
-          "multi agent system"
+          "multi agent system",
+          "multiagent architecture",
+          "multi agent collaboration system"
         ],
         "options": [
           "Multi-agent system",
@@ -2523,7 +2568,9 @@ window.QUIZ_MODULES = [
         "prompt": "What unique number does a tokenizer assign to a token in its vocabulary?",
         "answer": "Token ID",
         "aliases": [
-          "Token ID"
+          "Token ID",
+          "token identifier",
+          "token index"
         ],
         "options": [
           "Token ID",
@@ -2543,7 +2590,9 @@ window.QUIZ_MODULES = [
         "prompt": "What encoding provides a transformer with the order of tokens in a sequence?",
         "answer": "Positional encoding",
         "aliases": [
-          "Positional encoding"
+          "Positional encoding",
+          "position encoding",
+          "positional encodings"
         ],
         "options": [
           "Positional encoding",
@@ -2563,7 +2612,10 @@ window.QUIZ_MODULES = [
         "prompt": "Which transformer block is associated with predicting subsequent tokens?",
         "answer": "Decoder",
         "aliases": [
-          "Decoder"
+          "Decoder",
+          "decoder block",
+          "transformer decoder",
+          "decoder layer"
         ],
         "options": [
           "Decoder",
@@ -2583,7 +2635,11 @@ window.QUIZ_MODULES = [
         "prompt": "What term means the model-generated output following a prompt?",
         "answer": "Completion",
         "aliases": [
-          "Completion"
+          "Completion",
+          "model completion",
+          "response",
+          "model response",
+          "generated response"
         ],
         "options": [
           "Completion",
@@ -2603,7 +2659,9 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes an AI system that uses a model, instructions and tools to pursue tasks?",
         "answer": "AI agent",
         "aliases": [
-          "AI agent"
+          "AI agent",
+          "agent",
+          "artificial intelligence agent"
         ],
         "options": [
           "AI agent",
@@ -2847,7 +2905,9 @@ window.QUIZ_MODULES = [
         "prompt": "What do we call a body of text collected for analysis?",
         "answer": "Corpus",
         "aliases": [
-          "Corpus"
+          "Corpus",
+          "text corpus",
+          "corpora"
         ],
         "options": [
           "Corpus",
@@ -2868,7 +2928,9 @@ window.QUIZ_MODULES = [
         "answer": "Lemmatization",
         "aliases": [
           "Lemmatization",
-          "lemmatisation"
+          "lemmatisation",
+          "lemmatizing",
+          "lemmatising"
         ],
         "options": [
           "Lemmatization",
@@ -2888,7 +2950,10 @@ window.QUIZ_MODULES = [
         "prompt": "What name is given to a sequence of two adjacent tokens?",
         "answer": "Bigram",
         "aliases": [
-          "Bigram"
+          "Bigram",
+          "bi gram",
+          "two gram",
+          "2 gram"
         ],
         "options": [
           "Bigram",
@@ -2909,7 +2974,9 @@ window.QUIZ_MODULES = [
         "answer": "TF-IDF",
         "aliases": [
           "TF-IDF",
-          "tf idf"
+          "tf idf",
+          "term frequency inverse document frequency",
+          "term frequency and inverse document frequency"
         ],
         "options": [
           "TF-IDF",
@@ -2929,7 +2996,9 @@ window.QUIZ_MODULES = [
         "prompt": "What geometric measure compares the orientation of embedding vectors?",
         "answer": "Cosine similarity",
         "aliases": [
-          "Cosine similarity"
+          "Cosine similarity",
+          "cosine similarity score",
+          "cosine measure"
         ],
         "options": [
           "Cosine similarity",
@@ -3149,7 +3218,8 @@ window.QUIZ_MODULES = [
         "prompt": "What is the smallest named text unit produced during tokenization?",
         "answer": "Token",
         "aliases": [
-          "Token"
+          "Token",
+          "text token"
         ],
         "options": [
           "Token",
@@ -3169,7 +3239,10 @@ window.QUIZ_MODULES = [
         "prompt": "What process converts text into distinct units for analysis?",
         "answer": "Tokenization",
         "aliases": [
-          "Tokenization"
+          "Tokenization",
+          "tokenisation",
+          "tokenizing",
+          "tokenising"
         ],
         "options": [
           "Tokenization",
@@ -3189,7 +3262,8 @@ window.QUIZ_MODULES = [
         "prompt": "What is a sequence of adjacent tokens called in text statistics?",
         "answer": "N-gram",
         "aliases": [
-          "N-gram"
+          "N-gram",
+          "ngram"
         ],
         "options": [
           "N-gram",
@@ -3209,7 +3283,10 @@ window.QUIZ_MODULES = [
         "prompt": "What measure records how often a token occurs?",
         "answer": "Term frequency",
         "aliases": [
-          "Term frequency"
+          "Term frequency",
+          "token frequency",
+          "word frequency",
+          "TF"
         ],
         "options": [
           "Term frequency",
@@ -3229,7 +3306,9 @@ window.QUIZ_MODULES = [
         "prompt": "What mathematical space contains the numeric representations of semantic tokens?",
         "answer": "Vector space",
         "aliases": [
-          "Vector space"
+          "Vector space",
+          "embedding space",
+          "vector embedding space"
         ],
         "options": [
           "Vector space",
@@ -3475,7 +3554,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Speech recognition",
           "speech to text",
-          "stt"
+          "stt",
+          "automatic speech recognition",
+          "ASR"
         ],
         "options": [
           "Speech recognition",
@@ -3497,7 +3578,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Speech synthesis",
           "text to speech",
-          "tts"
+          "tts",
+          "speech generation"
         ],
         "options": [
           "Speech synthesis",
@@ -3517,7 +3599,10 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes the transcript output of a speech recognition system?",
         "answer": "Transcription",
         "aliases": [
-          "Transcription"
+          "Transcription",
+          "transcript",
+          "speech transcript",
+          "speech transcription"
         ],
         "options": [
           "Transcription",
@@ -3537,7 +3622,9 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes the voice style or tone conveyed in generated speech?",
         "answer": "Prosody",
         "aliases": [
-          "Prosody"
+          "Prosody",
+          "speech prosody",
+          "vocal prosody"
         ],
         "options": [
           "Prosody",
@@ -3777,7 +3864,9 @@ window.QUIZ_MODULES = [
         "prompt": "What is the general name for identifying the language spoken in an audio clip?",
         "answer": "Language identification",
         "aliases": [
-          "Language identification"
+          "Language identification",
+          "spoken language identification",
+          "language detection"
         ],
         "options": [
           "Language identification",
@@ -3797,7 +3886,11 @@ window.QUIZ_MODULES = [
         "prompt": "What is converting speech to written text often called?",
         "answer": "Speech-to-text",
         "aliases": [
-          "Speech-to-text"
+          "Speech-to-text",
+          "speech recognition",
+          "STT",
+          "automatic speech recognition",
+          "ASR"
         ],
         "options": [
           "Speech-to-text",
@@ -3817,7 +3910,10 @@ window.QUIZ_MODULES = [
         "prompt": "What term means recognising which speaker said each part of a recording?",
         "answer": "Speaker diarization",
         "aliases": [
-          "Speaker diarization"
+          "Speaker diarization",
+          "speaker diarisation",
+          "diarization",
+          "diarisation"
         ],
         "options": [
           "Speaker diarization",
@@ -3837,7 +3933,8 @@ window.QUIZ_MODULES = [
         "prompt": "What abbreviation is commonly used for text-to-speech?",
         "answer": "TTS",
         "aliases": [
-          "TTS"
+          "TTS",
+          "text to speech"
         ],
         "options": [
           "TTS",
@@ -3857,7 +3954,8 @@ window.QUIZ_MODULES = [
         "prompt": "What is the change of perceived pitch over speech called?",
         "answer": "Intonation",
         "aliases": [
-          "Intonation"
+          "Intonation",
+          "pitch intonation"
         ],
         "options": [
           "Intonation",
@@ -4101,7 +4199,9 @@ window.QUIZ_MODULES = [
         "prompt": "What task predicts a label for the overall content of an image?",
         "answer": "Image classification",
         "aliases": [
-          "Image classification"
+          "Image classification",
+          "image labelling",
+          "image labeling"
         ],
         "options": [
           "Image classification",
@@ -4161,7 +4261,11 @@ window.QUIZ_MODULES = [
         "prompt": "What is the small numeric matrix applied across an image during convolutional filtering called?",
         "answer": "Filter kernel",
         "aliases": [
-          "Filter kernel"
+          "Filter kernel",
+          "kernel",
+          "convolution kernel",
+          "convolutional kernel",
+          "convolution filter"
         ],
         "options": [
           "Filter kernel",
@@ -4181,7 +4285,9 @@ window.QUIZ_MODULES = [
         "prompt": "What image generation process iteratively removes noise to create an image?",
         "answer": "Diffusion",
         "aliases": [
-          "Diffusion"
+          "Diffusion",
+          "diffusion model",
+          "diffusion process"
         ],
         "options": [
           "Diffusion",
@@ -4401,7 +4507,9 @@ window.QUIZ_MODULES = [
         "prompt": "What graphical shape is often returned around a detected object?",
         "answer": "Bounding box",
         "aliases": [
-          "Bounding box"
+          "Bounding box",
+          "bounding rectangle",
+          "bounding boxes"
         ],
         "options": [
           "Bounding box",
@@ -4421,7 +4529,10 @@ window.QUIZ_MODULES = [
         "prompt": "What name is given to the individual coloured picture elements in an image?",
         "answer": "Pixels",
         "aliases": [
-          "Pixels"
+          "Pixels",
+          "pixel",
+          "picture element",
+          "picture elements"
         ],
         "options": [
           "Pixels",
@@ -4481,7 +4592,9 @@ window.QUIZ_MODULES = [
         "prompt": "What technique starts from noisy image data and iteratively refines it to generate images?",
         "answer": "Diffusion",
         "aliases": [
-          "Diffusion"
+          "Diffusion",
+          "diffusion model",
+          "diffusion process"
         ],
         "options": [
           "Diffusion",
@@ -4746,7 +4859,9 @@ window.QUIZ_MODULES = [
         "prompt": "What process assigns extracted values to named fields such as invoice date or total?",
         "answer": "Field mapping",
         "aliases": [
-          "Field mapping"
+          "Field mapping",
+          "mapping fields",
+          "mapping to fields"
         ],
         "options": [
           "Field mapping",
@@ -4767,7 +4882,10 @@ window.QUIZ_MODULES = [
         "answer": "Template-based detection",
         "aliases": [
           "Template-based detection",
-          "template based detection"
+          "template based detection",
+          "template based extraction",
+          "template matching",
+          "template based field detection"
         ],
         "options": [
           "Template-based detection",
@@ -4789,7 +4907,11 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Human-in-the-loop validation",
           "human in the loop",
-          "human review"
+          "human review",
+          "human in the loop review",
+          "human validation",
+          "human verification",
+          "HITL"
         ],
         "options": [
           "Human-in-the-loop validation",
@@ -4810,7 +4932,9 @@ window.QUIZ_MODULES = [
         "answer": "Key-value pair",
         "aliases": [
           "Key-value pair",
-          "key value pair"
+          "key value pair",
+          "key and value pair",
+          "key value"
         ],
         "options": [
           "Key-value pair",
@@ -5030,7 +5154,10 @@ window.QUIZ_MODULES = [
         "prompt": "What term refers to turning an unstructured document into named data values?",
         "answer": "Information extraction",
         "aliases": [
-          "Information extraction"
+          "Information extraction",
+          "document information extraction",
+          "document extraction",
+          "extracting information"
         ],
         "options": [
           "Information extraction",
@@ -5050,7 +5177,8 @@ window.QUIZ_MODULES = [
         "prompt": "What three-letter abbreviation means optical character recognition?",
         "answer": "OCR",
         "aliases": [
-          "OCR"
+          "OCR",
+          "optical character recognition"
         ],
         "options": [
           "OCR",
@@ -5070,7 +5198,9 @@ window.QUIZ_MODULES = [
         "prompt": "What output identifies the position of recognised text in a page image?",
         "answer": "Bounding box",
         "aliases": [
-          "Bounding box"
+          "Bounding box",
+          "text bounding box",
+          "bounding rectangle"
         ],
         "options": [
           "Bounding box",
@@ -5090,7 +5220,9 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes a named item such as invoice date or total in a document?",
         "answer": "Field",
         "aliases": [
-          "Field"
+          "Field",
+          "data field",
+          "document field"
         ],
         "options": [
           "Field",
@@ -5110,7 +5242,9 @@ window.QUIZ_MODULES = [
         "prompt": "What is linking recognised document values to named data fields called?",
         "answer": "Field mapping",
         "aliases": [
-          "Field mapping"
+          "Field mapping",
+          "mapping fields",
+          "mapping to fields"
         ],
         "options": [
           "Field mapping",
@@ -5375,7 +5509,11 @@ window.QUIZ_MODULES = [
         "prompt": "What is splitting source documents into focused passages called?",
         "answer": "Chunking",
         "aliases": [
-          "Chunking"
+          "Chunking",
+          "document chunking",
+          "text chunking",
+          "chunking documents",
+          "chunking text"
         ],
         "options": [
           "Chunking",
@@ -5395,7 +5533,9 @@ window.QUIZ_MODULES = [
         "prompt": "What kind of search combines keyword and semantic vector retrieval?",
         "answer": "Hybrid search",
         "aliases": [
-          "Hybrid search"
+          "Hybrid search",
+          "hybrid retrieval",
+          "hybrid keyword vector search"
         ],
         "options": [
           "Hybrid search",
@@ -5415,7 +5555,11 @@ window.QUIZ_MODULES = [
         "prompt": "What numeric representation encodes semantic characteristics of a document chunk?",
         "answer": "Embedding",
         "aliases": [
-          "Embedding"
+          "Embedding",
+          "vector embedding",
+          "embedding vector",
+          "document embedding",
+          "chunk embedding"
         ],
         "options": [
           "Embedding",
@@ -5435,7 +5579,10 @@ window.QUIZ_MODULES = [
         "prompt": "What evaluation property asks whether generated claims are supported by retrieved evidence?",
         "answer": "Groundedness",
         "aliases": [
-          "Groundedness"
+          "Groundedness",
+          "grounding",
+          "groundedness score",
+          "faithfulness"
         ],
         "options": [
           "Groundedness",
@@ -5675,7 +5822,11 @@ window.QUIZ_MODULES = [
         "prompt": "What is splitting long source documents into smaller passages called?",
         "answer": "Chunking",
         "aliases": [
-          "Chunking"
+          "Chunking",
+          "document chunking",
+          "text chunking",
+          "chunking documents",
+          "chunking text"
         ],
         "options": [
           "Chunking",
@@ -5695,7 +5846,9 @@ window.QUIZ_MODULES = [
         "prompt": "What numerical representation supports semantic similarity search?",
         "answer": "Embedding",
         "aliases": [
-          "Embedding"
+          "Embedding",
+          "vector embedding",
+          "embedding vector"
         ],
         "options": [
           "Embedding",
@@ -5715,7 +5868,11 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes making an AI answer supported by supplied source evidence?",
         "answer": "Grounding",
         "aliases": [
-          "Grounding"
+          "Grounding",
+          "grounding in evidence",
+          "context grounding",
+          "grounding in context",
+          "grounding responses"
         ],
         "options": [
           "Grounding",
@@ -5735,7 +5892,10 @@ window.QUIZ_MODULES = [
         "prompt": "What term describes whether a generated answer follows its retrieved supporting context?",
         "answer": "Groundedness",
         "aliases": [
-          "Groundedness"
+          "Groundedness",
+          "groundedness score",
+          "faithfulness",
+          "grounding"
         ],
         "options": [
           "Groundedness",
