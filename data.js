@@ -137,7 +137,9 @@ window.QUIZ_MODULES = [
           "new data",
           "previously unseen data",
           "unseen examples",
-          "previously unseen examples"
+          "previously unseen examples",
+          "unseen",
+          "previously unseen"
         ],
         "options": [
           "Unseen data",
@@ -425,7 +427,8 @@ window.QUIZ_MODULES = [
           "Semantic relationships",
           "semantics",
           "semantic relationship",
-          "semantic associations"
+          "semantic associations",
+          "semantic"
         ],
         "options": [
           "Semantic relationships",
@@ -737,7 +740,12 @@ window.QUIZ_MODULES = [
           "named entity recognition",
           "entity recognition",
           "named-entity recognition",
-          "NER"
+          "NER",
+          "entity",
+          "named entity",
+          "named entities",
+          "detecting entities",
+          "detecting named entities"
         ],
         "options": [
           "Entity detection",
@@ -984,7 +992,8 @@ window.QUIZ_MODULES = [
           "STT",
           "speech to text",
           "automatic speech recognition",
-          "ASR"
+          "ASR",
+          "recognition"
         ],
         "options": [
           "Speech recognition",
@@ -1008,7 +1017,8 @@ window.QUIZ_MODULES = [
           "text-to-speech",
           "TTS",
           "text to speech",
-          "speech generation"
+          "speech generation",
+          "synthesis"
         ],
         "options": [
           "Speech synthesis",
@@ -1318,7 +1328,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Image classification",
           "image labeling",
-          "image labelling"
+          "image labelling",
+          "classification",
+          "classifying"
         ],
         "options": [
           "Image classification",
@@ -1340,7 +1352,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Object detection",
           "object localisation and detection",
-          "object localization and detection"
+          "object localization and detection",
+          "detection",
+          "detecting objects"
         ],
         "options": [
           "Object detection",
@@ -1652,7 +1666,9 @@ window.QUIZ_MODULES = [
         "answer": "Unstructured data",
         "aliases": [
           "Unstructured data",
-          "non structured data"
+          "non structured data",
+          "unstructured",
+          "non structured"
         ],
         "options": [
           "Unstructured data",
@@ -2325,7 +2341,8 @@ window.QUIZ_MODULES = [
           "System prompt",
           "system instructions",
           "system message",
-          "system instruction"
+          "system instruction",
+          "system"
         ],
         "options": [
           "System prompt",
@@ -2348,7 +2365,9 @@ window.QUIZ_MODULES = [
           "Multi-agent system",
           "multi agent system",
           "multiagent architecture",
-          "multi agent collaboration system"
+          "multi agent collaboration system",
+          "multi agent",
+          "multiagent"
         ],
         "options": [
           "Multi-agent system",
@@ -2570,7 +2589,10 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Token ID",
           "token identifier",
-          "token index"
+          "token index",
+          "ID",
+          "identifier",
+          "token number"
         ],
         "options": [
           "Token ID",
@@ -2592,7 +2614,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Positional encoding",
           "position encoding",
-          "positional encodings"
+          "positional encodings",
+          "positional",
+          "position"
         ],
         "options": [
           "Positional encoding",
@@ -2998,7 +3022,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Cosine similarity",
           "cosine similarity score",
-          "cosine measure"
+          "cosine measure",
+          "cosine"
         ],
         "options": [
           "Cosine similarity",
@@ -3286,7 +3311,8 @@ window.QUIZ_MODULES = [
           "Term frequency",
           "token frequency",
           "word frequency",
-          "TF"
+          "TF",
+          "frequency"
         ],
         "options": [
           "Term frequency",
@@ -3308,7 +3334,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Vector space",
           "embedding space",
-          "vector embedding space"
+          "vector embedding space",
+          "vector"
         ],
         "options": [
           "Vector space",
@@ -3556,7 +3583,8 @@ window.QUIZ_MODULES = [
           "speech to text",
           "stt",
           "automatic speech recognition",
-          "ASR"
+          "ASR",
+          "recognition"
         ],
         "options": [
           "Speech recognition",
@@ -3579,7 +3607,8 @@ window.QUIZ_MODULES = [
           "Speech synthesis",
           "text to speech",
           "tts",
-          "speech generation"
+          "speech generation",
+          "synthesis"
         ],
         "options": [
           "Speech synthesis",
@@ -3644,7 +3673,9 @@ window.QUIZ_MODULES = [
         "prompt": "What technology enables a spoken conversation to be translated into another language?",
         "answer": "Speech translation",
         "aliases": [
-          "Speech translation"
+          "Speech translation",
+          "speech to speech translation",
+          "translation"
         ],
         "options": [
           "Speech translation",
@@ -3866,7 +3897,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Language identification",
           "spoken language identification",
-          "language detection"
+          "language detection",
+          "spoken language detection"
         ],
         "options": [
           "Language identification",
@@ -4201,7 +4233,9 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Image classification",
           "image labelling",
-          "image labeling"
+          "image labeling",
+          "classification",
+          "classifying"
         ],
         "options": [
           "Image classification",
@@ -4221,7 +4255,9 @@ window.QUIZ_MODULES = [
         "prompt": "What task returns rectangular bounding boxes for objects found in an image?",
         "answer": "Object detection",
         "aliases": [
-          "Object detection"
+          "Object detection",
+          "detection",
+          "detecting objects"
         ],
         "options": [
           "Object detection",
@@ -4241,7 +4277,8 @@ window.QUIZ_MODULES = [
         "prompt": "What task classifies individual pixels by object or region?",
         "answer": "Semantic segmentation",
         "aliases": [
-          "Semantic segmentation"
+          "Semantic segmentation",
+          "pixel level segmentation"
         ],
         "options": [
           "Semantic segmentation",
@@ -4861,7 +4898,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Field mapping",
           "mapping fields",
-          "mapping to fields"
+          "mapping to fields",
+          "mapping"
         ],
         "options": [
           "Field mapping",
@@ -4885,7 +4923,9 @@ window.QUIZ_MODULES = [
           "template based detection",
           "template based extraction",
           "template matching",
-          "template based field detection"
+          "template based field detection",
+          "template based",
+          "template"
         ],
         "options": [
           "Template-based detection",
@@ -5244,7 +5284,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Field mapping",
           "mapping fields",
-          "mapping to fields"
+          "mapping to fields",
+          "mapping"
         ],
         "options": [
           "Field mapping",
@@ -5535,7 +5576,8 @@ window.QUIZ_MODULES = [
         "aliases": [
           "Hybrid search",
           "hybrid retrieval",
-          "hybrid keyword vector search"
+          "hybrid keyword vector search",
+          "hybrid"
         ],
         "options": [
           "Hybrid search",
