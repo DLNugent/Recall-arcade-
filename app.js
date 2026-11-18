@@ -9,27 +9,54 @@ saved.history??=[];saved.stats??={};saved.best??={};
 const persist=()=>{try{localStorage.setItem(STORAGE,JSON.stringify(saved))}catch{}};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuffle=arr=>{const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-const norm=s=>String(s??'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim().replace(/^(?:a|an|the) /,'');
-const singular=s=>s.split(' ').map(w=>w.length>4&&w.endsWith('ies')?w.slice(0,-3)+'y':w.length>4&&w.endsWith('s')&&!w.endsWith('ss')?w.slice(0,-1):w).join(' ');
-const distanceOne=(a,b)=>{if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,edits=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue}if(++edits>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}return edits+(a.length-i)+(b.length-j)<=1};
+// Conservative, token-aware recall matching. Exact approved variants always win.
+const norm=s=>String(s??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim().replace(/^(?:(?:it is|it s|this is|this would be|the answer is|i think it is) )+/,'').replace(/^(?:a|an|the) /,'');
+const singular=s=>s.split(' ').map(w=>{
+ if(w==='corpora')return 'corpus';
+ if(w==='indices')return 'index';
+ if(w==='matrices')return 'matrix';
+ if(w.length>4&&w.endsWith('ies'))return w.slice(0,-3)+'y';
+ if(w.length>4&&/(?:ches|shes|xes|sses|zzes)$/.test(w))return w.slice(0,-2);
+ if(w.length>3&&w.endsWith('s')&&!/(?:ss|us|is|ous|ness)$/.test(w))return w.slice(0,-1);
+ return w;
+}).join(' ');
+const canonical=s=>singular(norm(s)).split(' ').map(w=>w.replace(/isation$/,'ization').replace(/ising$/,'izing').replace(/ised$/,'ized').replace(/iser$/,'izer').replace(/our$/,'or').replace(/elling$/,'eling').replace(/elled$/,'eled').replace(/centre$/,'center').replace(/recognise$/,'recognize').replace(/recognising$/,'recognizing')).join(' ');
+const compact=s=>s.replace(/ /g,'');
+function editDistance(a,b){
+ const rows=Array.from({length:a.length+1},()=>Array(b.length+1).fill(0));
+ for(let i=0;i<=a.length;i++)rows[i][0]=i;
+ for(let j=0;j<=b.length;j++)rows[0][j]=j;
+ for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++){
+ rows[i][j]=Math.min(rows[i-1][j]+1,rows[i][j-1]+1,rows[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+ if(i>1&&j>1&&a[i-1]===b[j-2]&&a[i-2]===b[j-1])rows[i][j]=Math.min(rows[i][j],rows[i-2][j-2]+1);
+ }return rows[a.length][b.length];
+}
 function recallCorrect(q,input){
-  const value=singular(norm(input));if(!value)return false;
-  const allowed=[q.answer,...(q.aliases||[])].map(v=>singular(norm(v)));
-  if(allowed.includes(value))return true;
-  // Accept spaces/hyphens omitted or inserted within an otherwise identical term,
-  // but never when that compact spelling corresponds to a competing option.
-  const compact=s=>s.replace(/ /g,'');
-  const condensed=compact(value);
-  const competitors=(q.options||[]).map(v=>singular(norm(v))).filter(v=>!allowed.includes(v));
-  if(condensed.length>=6 && allowed.some(a=>compact(a)===condensed) &&
-     !competitors.some(d=>compact(d)===condensed))return true;
-  // Distinctive shorthand for a two-word tool type: 'knowledge' for 'knowledge tool'.
-  const shorthand=allowed.filter(a=>/^[a-z]{5,} (?:tool|model)$/.test(a)).map(a=>a.replace(/ (?:tool|model)$/,''));
-  const distractors=(q.options||[]).map(v=>singular(norm(v))).filter(v=>!allowed.includes(v));
-  if(shorthand.some(a=>a.replace(/ /g,'')===value.replace(/ /g,''))&&!distractors.some(d=>d===value||d.startsWith(value+' ')))return true;
-  // At most one typo for longer terms. Never override a competing answer.
-  const candidate=allowed.some(a=>a.length>=7&&value.length>=7&&a.slice(0,2)===value.slice(0,2)&&distanceOne(a,value));
-  return candidate&&!distractors.some(d=>d===value||(d.length>=7&&distanceOne(d,value)));
+ const value=canonical(input);if(!value||value.length>140)return false;
+ const allowed=[...new Set([q.answer,...(q.aliases||[])].map(canonical).filter(Boolean))];
+ const wrong=(q.options||[]).filter(o=>o!==q.answer).map(canonical).filter(o=>!allowed.includes(o));
+ if(allowed.includes(value))return true;
+ const condensed=compact(value);
+ if(wrong.some(o=>compact(o)===condensed))return false;
+ if(allowed.some(o=>compact(o)===condensed))return true;
+ // Only tolerate limited typo edits, maintaining word count and protecting acronyms.
+ const distance=(a,b)=>{
+  const aa=a.split(' '),bb=b.split(' ');if(aa.length!==bb.length)return Infinity;
+  let sum=0;
+  for(let i=0;i<aa.length;i++){
+   const x=aa[i],y=bb[i];if(x===y)continue;
+   if(Math.min(x.length,y.length)<5)return Infinity;
+   const d=editDistance(x,y),limit=Math.max(x.length,y.length)>=10?2:1;
+   if(d>limit||x[0]!==y[0])return Infinity;
+   sum+=d;
+  }
+  return sum;
+ };
+ const best=Math.min(...allowed.map(a=>distance(a,value)));
+ const limit=condensed.length>=12?2:1;
+ if(!Number.isFinite(best)||best>limit)return false;
+ // Do not accept a typo that is equally close to a known wrong option.
+ return wrong.every(o=>distance(o,value)>best);
 }
 const icons=['🧠','✨','💬','🎙️','👁️','📄','⚖️','🔎'];
 const modeLabels={all:'Mixed challenge',recall:'Classic recall',match:'Clickable match',scenario:'Scenario challenge',weak:'Weak spots'};
