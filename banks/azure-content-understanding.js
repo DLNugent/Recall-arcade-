@@ -43,8 +43,7 @@ window.QUIZ_MODULES.push({
       "prompt": "What does OCR stand for when reading scanned documents?",
       "answer": "Optical character recognition",
       "aliases": [
-        "Optical character recognition",
-        "OCR"
+        "Optical character recognition"
       ],
       "options": [
         "Optical character recognition",
@@ -146,7 +145,7 @@ window.QUIZ_MODULES.push({
     {
       "id": "azure-extraction-recall-07",
       "type": "recall",
-      "prompt": "Which common business document contains fields such as supplier and invoice total?",
+      "prompt": "Which common business document typically lists a vendor, line items and a total payable?",
       "answer": "Invoice",
       "aliases": [
         "Invoice",
