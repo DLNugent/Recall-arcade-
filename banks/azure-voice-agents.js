@@ -46,7 +46,7 @@ window.QUIZ_MODULES.push({
     {
       "id": "azure-voiceagents-recall-02",
       "type": "recall",
-      "prompt": "What agent interaction mode must be chosen when creating a voice agent?",
+      "prompt": "Which interaction mode must be selected when initially creating an agent that will converse through speech?",
       "answer": "Voice",
       "aliases": [
         "Voice",
