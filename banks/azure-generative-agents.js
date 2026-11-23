@@ -27,8 +27,7 @@ window.QUIZ_MODULES.push({
       "prompt": "In Foundry, what catalog lets developers discover and compare AI models?",
       "answer": "Model catalog",
       "aliases": [
-        "Model catalog",
-        "catalog"
+        "Model catalog"
       ],
       "options": [
         "Model catalog",
@@ -176,8 +175,7 @@ window.QUIZ_MODULES.push({
       "answer": "System instructions",
       "aliases": [
         "System instructions",
-        "system prompt",
-        "instructions"
+        "system prompt"
       ],
       "options": [
         "System instructions",
