@@ -26,7 +26,24 @@ const singular=s=>s.split(' ').map(w=>{
  if(w.length>3&&w.endsWith('s')&&!/(?:ss|us|is|ous|ness)$/.test(w))return w.slice(0,-1);
  return w;
 }).join(' ');
-const canonical=s=>singular(norm(s)).split(' ').map(w=>w.replace(/isation$/,'ization').replace(/ising$/,'izing').replace(/ised$/,'ized').replace(/iser$/,'izer').replace(/our$/,'or').replace(/elling$/,'eling').replace(/elled$/,'eled').replace(/centre$/,'center').replace(/recognise$/,'recognize').replace(/recognising$/,'recognizing')).join(' ');
+// Explicit UK/US spelling equivalences only; don't rewrite arbitrary words.
+const spellingPairs=[
+ ['catalogue','catalog'],['catalogues','catalogs'],['cataloguing','cataloging'],['catalogued','cataloged'],
+ ['analyse','analyze'],['analyses','analyzes'],['analysed','analyzed'],['analysing','analyzing'],['analyser','analyzer'],['analysers','analyzers'],
+ ['organisation','organization'],['organisations','organizations'],['organise','organize'],['organised','organized'],['organising','organizing'],
+ ['recognise','recognize'],['recognised','recognized'],['recognising','recognizing'],['recogniser','recognizer'],['recognisers','recognizers'],
+ ['behaviour','behavior'],['behaviours','behaviors'],['colour','color'],['colours','colors'],['coloured','colored'],
+ ['centre','center'],['centres','centers'],['centralisation','centralization'],
+ ['optimise','optimize'],['optimised','optimized'],['optimising','optimizing'],['optimisation','optimization'],
+ ['summarise','summarize'],['summarised','summarized'],['summarising','summarizing'],['summarisation','summarization'],
+ ['tokenisation','tokenization'],['tokenising','tokenizing'],['tokenised','tokenized'],
+ ['diarisation','diarization'],['labelling','labeling'],['labelled','labeled'],
+ ['modelling','modeling'],['modelled','modeled'],['customise','customize'],['customised','customized'],
+ ['specialised','specialized'],['specialisation','specialization'],['authorisation','authorization'],['authorised','authorized'],
+ ['personalisation','personalization'],['personalised','personalized']
+];
+const spellings=new Map(spellingPairs.map(([british,american])=>[british,american]));
+const canonical=s=>singular(norm(s)).split(' ').map(w=>spellings.get(w)||w).join(' ');
 const compact=s=>s.replace(/ /g,'');
 function editDistance(a,b){
  const rows=Array.from({length:a.length+1},()=>Array(b.length+1).fill(0));
